@@ -15,6 +15,8 @@
 
 #version 2
 
+import math
+
 t = int(input("enter first number: "))
 h = int(input("enter second number: "))
 operator = input("what operation: ")
@@ -29,6 +31,8 @@ elif operator == "s":
     result = h - t
 elif operator == "m":
     result = t * h
+elif operator == "sq":
+    result = math.sqrt(h)
 else:
     result = -1
     print("wrong operator")
